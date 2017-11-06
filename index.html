@@ -5,28 +5,32 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="header1">
-  <div class="header1-top">
-    <a class="header1-logo">
+    <header class="header">
+  <div class="header-top">
+    <a class="header-logo">
       <img src="img/index-logo.svg" width="360" height="150" alt="Логотип">
     </a>
-    <form class="header1-search">
+    <form class="header-search">
       <input type="search" name="srch" placeholder="Поиск">
-      <input type="submit" value="Закладки">
-      <input type="submit" value="Корзина">
-      <input type="submit" value="Оформить заказ">
     </form>
+    <a href="#" class="header-marker">Закладки</a>
+    <a href="#" class="header-pannier">Корзина</a>
+    <a href="#" class="header-checkout">Оформить заказ</a>
   </div>
-  <div class="header1-middle">
+  <div class="header-middle-slogan">
     <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+  </div>
+  <div class="header-middle-contacts">
     <p><b>+7(812)555-05-55</b></p><br>
     <p>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
-    <ul class="user-navigation">
+  </div>
+  <div class="header-middle-user-navigation">
+    <ul>
       <li><a href="login.html">Войти</a></li>
       <li><a href="check-in.html">Регистрация</a></li>
     </ul>
   </div>
-  <section class="header1-bottom">
+  <section class="header-bottom">
     <h2 class="visually-hidden">Меню сайта</h2>
     <ul class="site-navigation">
       <li><a href="main.html">Главная</a></li>
@@ -43,39 +47,40 @@
   <section class="main-container">
   	<h2 class="visually-hidden">Услуги</h2>
     <div class="main-container-block">
-      <div class="block block1">
+      <div class="block-materials">
 	    <p><b>Материалы</b></p>
-		<a href="#" class="block1-materials">На любой вкус</a>
+		<a href="#" class="block-link">На любой вкус</a>
 	  </div>
-	  <div class="block block2">
+	  <div class="block-tool">
         <p><b>Инструменты</b></p>
-		<a href="#" class="block2-tool">На все случаи</a>
+		<a href="#" class="block-link">На все случаи</a>
 	  </div>
-	  <div class="block block3">
+	  <div class="block-mechanism">
 	  	<p><b>Техника</b></p>
-		<a href="#" class="block3-mechanism">Для стройки</a>
+		<a href="#" class="block-link">Для стройки</a>
       </div>
-	  <div class="block4-gallery">
+	  <div class="block-gallery">
         <figure class="gallery">
-          <a href="#"><img src="img/perf.jpg" width="286" height="164" alt="Перфораторы"></a>
+          <a href="#"><img src="img/slide-1.jpg" width="286" height="164" alt="Перфораторы"></a>
+          <a href="#"><img src="img/slide-.jpg" width="286" height="164" alt="Перфораторы"></a>
         </figure>
         <span class="button gallery-button gallery-button-back"></span>
         <span class="button gallery-button gallery-button-next"></span>
         <a href="#" class="btn-catalog">Открыть каталог</a>
 	  </div>
-	  <div class="block block5">
+	  <div class="block-sale">
         <p><b>Скидки 50%</b></p>
-		<a href="#" class="block5-sale">На 350 товаров</a>
+		<a href="#" class="block-link">На 350 товаров</a>
 	  </div>
-	  <div class="block block6">
+	  <div class="block-free">
         <p><b>Доставка</b></p>
-		<a href="#" class="block6-free">Бесплатно</a>
+		<a href="#" class="block-link">Бесплатно</a>
 	  </div>
 	</div>
   </section>
   <section class="main-gds">
-  	<h2 class="main-gds-topic">Популярные товары:</h2>
-  	<a href="#" class="main-gds-all">Все популярные товары</a>
+  	<h2 class="main-topic">Популярные товары:</h2>
+  	<a href="#" class="main-all-item">Все популярные товары</a>
   	<ul class="main-gds-list">
   	  <li class="main-gds-item">
   	  	<h3>
@@ -84,11 +89,9 @@
   	      	<span class="main-gds-id">BFG 9000</span>
           </a>
   	  	</h3>
-        <p class="main-gds-image">
           <a href="main-gds-item.html">
           	<img src="img/product-1.jpg" width="200" height="160" alt="Перфоратор BOSCH BFG 9000">
           </a>
-        </p>
         <p class="main-gds-item-price">
           <span class="main-gds-old-price">32500 Р.</span>
           <a class="button" href="#">255000 Р.</a>
@@ -101,11 +104,9 @@
   	      	<span class="main-gds-id">BFG 3000</span>
           </a>
   	  	</h3>
-        <p class="main-gds-image">
           <a href="main-gds-item.html">
           	<img src="img/product-2.jpg" width="200" height="160" alt="Перфоратор BOSCH BFG 3000">
           </a>
-        </p>
         <p class="main-gds-item-price">
           <span class="main-gds-old-price">22500 Р.</span>
           <a class="button" href="#">15500 Р.</a>
@@ -118,11 +119,9 @@
   	      	<span class="main-gds-id">BFG 6000</span>
           </a>
   	  	</h3>
-        <p class="main-gds-image">
           <a href="main-gds-item.html">
           	<img src="img/product-3.jpg" width="200" height="160" alt="Перфоратор BOSCH BFG 6000">
           </a>
-        </p>
         <p class="main-gds-item-price">
           <span class="main-gds-old-price">30500 Р.</span>
           <a class="button" href="#">25500 Р.</a>
@@ -135,11 +134,9 @@
   	      	<span class="main-gds-id">BFG 2000</span>
           </a>
   	  	</h3>
-        <p class="main-gds-image">
           <a href="main-gds-item.html">
           	<img src="img/product-4.jpg" width="200" height="160" alt="Перфоратор BOSCH BFG 2000">
           </a>
-        </p>
         <p class="main-gds-item-price">
           <a class="button" href="#">12500 Р.</a>
         </p>
@@ -147,64 +144,47 @@
   	</ul>
   </section>
   <section class="main-manufact">
-  	<h2 class="main-manufact-topic">Популярные товары:</h2>
-    <a href="#" class="main-manufact-all">Все производители</a>
+  	<h2 class="main-topic">Популярные товары:</h2>
+    <a href="#" class="main-all-item">Все производители</a>
   	<ul class="main-manufact-list">
-  	  <li class="main-manufact-item">
-        <p class="main-manufact-image">
-          <a href="main-manufact-item.html">
-            <img src="img/manufacturer-1.jpg" width="220" height="165" alt="BOSCH">
-          </a>
-        </p>
-  	  </li>
-  	  <li>
-  	  	<p class="main-manufact-image">
-          <a href="main-manufact-item.html">
-            <img src="img/manufacturer-2.jpg" width="220" height="165" alt="Makita Corporation">
-          </a>
-        </p>
-  	  </li>
-      <li>
-      	<p class="main-manufact-image">
-          <a href="main-manufact-item.html">
-            <img src="img/manufacturer-3.jpg" width="220" height="165" alt="DeWALT">
-          </a>
-        </p>
+  	  <li class="main-manufact-image">
+        <a href="main-manufact-item.html">
+          <img src="img/manufacturer-1.jpg" width="220" height="165" alt="BOSCH">
+        </a>
       </li>
-      <li>
-      	<p class="main-manufact-image">
-          <a href="main-manufact-item.html">
-            <img src="img/manufacturer-4.jpg" width="220" height="165" alt="Интерскол">
-          </a>
-        </p>
+  	  <li class="main-manufact-image">
+  	    <a href="main-manufact-item.html">
+          <img src="img/manufacturer-2.jpg" width="220" height="165" alt="Makita Corporation">
+        </a>
       </li>
-      <li>
-      	<p class="main-manufact-image">
-          <a href="main-manufact-item.html">
-            <img src="img/manufacturer-5.jpg" width="220" height="165" alt="HITACHI">
-          </a>
-        </p>
+      <li class="main-manufact-image">
+        <a href="main-manufact-item.html">
+          <img src="img/manufacturer-3.jpg" width="220" height="165" alt="DeWALT">
+        </a>
+      <li class="main-manufact-image">
+        <a href="main-manufact-item.html">
+          <img src="img/manufacturer-4.jpg" width="220" height="165" alt="Интерскол">
+        </a>
       </li>
-      <li>
-      	<p class="main-manufact-image">
-          <a href="main-manufact-item.html">
-            <img src="img/manufacturer-6.jpg" width="220" height="165" alt="LG">
-          </a>
-        </p>
+      <li class="main-manufact-image">
+      	<a href="main-manufact-item.html">
+          <img src="img/manufacturer-5.jpg" width="220" height="165" alt="HITACHI">
+        </a>
       </li>
-      <li>
-      	<p class="main-manufact-image">
-          <a href="main-manufact-item.html">
-            <img src="img/manufacturer-7.jpg" width="220" height="165" alt="AEG">
-          </a>
-        </p>
+      <li class="main-manufact-image">
+      	<a href="main-manufact-item.html">
+          <img src="img/manufacturer-6.jpg" width="220" height="165" alt="LG">
+        </a>
       </li>
-      <li>
-      	<p class="main-manufact-image">
-          <a href="main-manufact-item.html">
+      <li class="main-manufact-image">
+      	<a href="main-manufact-item.html">
+          <img src="img/manufacturer-7.jpg" width="220" height="165" alt="AEG">
+        </a>
+      </li>
+      <li class="main-manufact-image">
+        <a href="main-manufact-item.html">
             <img src="img/manufacturer-8.jpg" width="220" height="165" alt="metabo">
-          </a>
-        </p>
+        </a>
       </li>
   	</ul>
   </section>
@@ -253,45 +233,47 @@
   	<a href="#" class="main-contacts-btn">Заблудились?Напишите нам!</a>
   </div>
 </main>
-<header>
-  <section class="header2">
+<footer>
+  <div class="footer-top">
   	<h4 class="visually-hidden">Техномарт</h4>
-    <a href="#" class="header2-logo">
+    <a href="#" class="footer-top-logo">
       <img src="img/index-logo.svg" width="360" height="150" alt="Логотип">
     </a>
-    <ul class="header2-list1">
-      <li class="header2-item1"><a href="company.html">Компания</a></li>
-      <li class="header2-item1"><a href="news.html" >Новости</a></li>
-      <li class="header2-item1"><a href="catalog.html">Каталог</a></li>
-      <li class="header2-item1"><a href="delivery.html">Доставка</a></li>
-      <li class="header2-item1"><a href="contacts.html">Контакты</a></li>
+    <p class="footer-top-contacts">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7(812)555-05-55</p>
+  </div>
+  <div class="footer-top-navigation">
+    <ul class="footer-top-list-first">
+      <li><a href="company.html">Компания</a></li>
+      <li><a href="news.html" >Новости</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="delivery.html">Доставка</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
     </ul>
-    <p class="header2-cjntacts">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7(812)555-05-55</p>
-    <ul class="header2-list2">
-      <li class="header2-item2"><a href="#">Мытериалы</a></li>
-      <li class="header2-item2"><a href="#">Техника</a></li>
-      <li class="header2-item2"><a href="#">Инструменты</a></li>
-      <li class="header2-item2"><a href="#">Спецпредложения</a></li>
-    </ul>
-  </section>
-</header>
-<footer>
-  <p class="footer-copyright">© 2010-2017 Компания "Техномарт"<br>Все права защищены</p>
-  <div class="footer-social">
-    <ul>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
+    <ul class="footer-top-list-second">
+      <li><a href="#">Материалы</a></li>
+      <li><a href="#">Техника</a></li>
+      <li><a href="#">Инструменты</a></li>
+      <li><a href="#">Спецпредложения</a></li>
     </ul>
   </div>
-  <p>
-    <b class="footer-feedback">Обратная связь:</b>
-    <a href="https://htmlacademy.ru/email"  class="footer-link">mail@htmlacademy.ru</a>
-  </p>
-  <p>
-    <b  class="footer-feedback">Разработанно —</b>
-    <a href="https://htmlacademy.ru" class="footer-link">htmlacademy.ru</a>
-  </p>
+  <div class="footer-bottom-copyright">
+    <p>© 2010-2017 Компания "Техномарт"<br>Все права защищены</p>
+  </div>
+  <div class="footer-bottom-social">
+    <ul>
+      <li><a href="#">Вконтакте</a></li>
+      <li><a href="#">Фейсбук</a></li>
+      <li><a href="#">Инстаграм</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom-feedback">
+    <p>Обратная связь:<br>
+      <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </p>
+    <p>Разработанно —<br>
+      <a href="https://htmlacademy.ru" class="footer-link">htmlacademy.ru</a>
+    </p>
+  </div>
 </footer>
 
        <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
