@@ -9,7 +9,8 @@
   <div class="header-top">
     <p>ТЕХНОМАРТ</p>
     <form class="header-search">
-      <input type="search" name="srch" placeholder="Поиск">
+      <input type="search" name="srch" placeholder="Поиск" id="header-search-id">
+       <label class="visually-hidden" for="header-search-id">Поиск</label>
     </form>
     <a href="#" class="header-marker">Закладки:0</a>
     <a href="#" class="header-pannier">Корзина:0</a>
@@ -211,31 +212,24 @@
   	<p class="main-about-us-slogan">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
   	<p class="main-about-us-slogan">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
   	<ul class="main-transport-companies-list">
-  	  <li class="main-transport-companies-item">
-  	  	<a href="https://www.dellin.ru/">Деловые линии</a>
-  	  </li>
-  	  <li>
-  	    <a href="http://avtotreyding.transportnaya-kompaniya.com/">Автотрейдинг</a>
-  	  </li>
-  	  <li>
-  	  	<a href="https://www.jde.ru/">ЖелДорЭкспедиция</a>
-  	  </li>
+  	  <li class="main-transport-companies-item">Деловые линии</li>
+  	  <li class="main-transport-companies-item">Автотрейдинг</li>
+  	  <li class="main-transport-companies-item">ЖелДорЭкспедиция</li>
   	</ul>
   	 <a href="#" class="main-about-us-btn">Подробнее о Компании</a>
   </div>
   <div class="main-contacts">
   	<h3 class="main-contacts-topic">КОНТАКТЫ</h3>
   	<p class="main-contacts-slogan">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-    <form class="main-contacts-map">
+    <p class="main-contacts-map">
       <img src="img/map.png" width="300" height="158" alt="Карта">
-    </form>
+    </p>
   	<a href="#" class="main-contacts-btn">Заблудились?Напишите нам!</a>
   </div>
 </main>
 <footer>
   <div class="footer-top">
-  	<h4 class="visually-hidden">Техномарт</h4>
-    <a href="#" class="footer-top-logo">
+  	<a href="#" class="footer-top-logo">
       ТЕХНОМАРТ
     </a>
     <p class="footer-top-contacts">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7(812)555-05-55</p>
@@ -275,7 +269,21 @@
   </div>
 </footer>
 
-       <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<form class="visually-hidden">
+	<label class="visually-hidden" for="close">Закрыть форму</label>
+	<button type="button" id="close"></button>
+  <fieldset>
+  	<legend class="visually-hidden">Контактная информация:</legend>
+	<label for="name">Ваше имя:</label>
+    <input type="text" name="users-name" id="name" placeholder="Представтесь, пожалуйста" required>
+	<label for="email">Ваш e-mail:</label>
+    <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+  </fieldset>  
+    <label for="message">Текст письма:</label>
+    <textarea rows="5" name="text" id="message" placeholder="В свободной форме"></textarea>
+    <label class="visually-hidden" for="send"></label>
+    <input type="submit" value="Отправить" id="send">	
 
+</form>
   </body>
 </html>

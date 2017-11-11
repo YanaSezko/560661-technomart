@@ -9,7 +9,8 @@
       <div class="header-top">
         <p>ТЕХНОМАРТ</p>
         <form class="header-search">
-          <input type="search" name="srch" placeholder="Поиск">
+          <input type="search" name="srch" placeholder="Поиск" id="header-search-id">
+          <label class="visually-hidden" for="header-search-id">Поиск</label>
         </form>
         <a href="#" class="header-marker">Закладки:0</a>
         <a href="#" class="header-pannier">Корзина:10</a>
@@ -58,8 +59,12 @@
       <form class="main-filter-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Цена:</legend>
-          <input class="main-filter-range" type="range" name="prices range" min="0" max="30000" step="1"><br>
-          <span class="main-filter-range">0 – 30000</span>
+          <input class="main-filter-range" type="range" name="prices range" min="0" max="30000" step="1" id="prices range">
+          <label class="visually-hidden" for="prices range"></label>
+          <input type="number" name="min-price" id="min-price" min="0">
+          <label class="visually-hidden" for="min-price">минимальная цена</label> –
+          <input type="number" name="max-price" id="max-price" max="30000">
+          <label class="visually-hidden" for="max-price">максимальная цена</label>
         </fieldset>
         <fieldset>
           <legend>Производители:</legend>
@@ -118,9 +123,28 @@
     </div>
     <div class="main-sorting">
       <p class="main-sorting-topic"><b>Сортировка:</b></p>
-      <p>По цене</p>
-      <p>По типу</p>
-      <p>По функционалу</p>
+      <ul class="main-sorting-list">
+        <li class="main-sorting-list-item">
+          <button type="button" name="price-sort" id="price-sort">По цене</button>
+          <label class="visually-hidden" for="price-sort">сортировка по цене</label>
+        </li>
+        <li class="main-sorting-list-item">
+          <button type="button" name="type-sort">По типу</button>
+          <label class="visually-hidden" for="type-sort">сортировка по типу</label>
+        </li>
+        <li class="main-sorting-list-item">
+         <button type="button" name="functional-sort">По функционалу</button>
+         <label class="visually-hidden" for="functional-sort">сортировка по функционалу</label>
+        </li>
+        <li class="main-sorting-list-item-direction-default">
+          <input type="radio" name="direction" value="asc" id="main-sorting-up" checked>
+          <lable class="up" for="main-sorting-up">по возрастанию</lable>
+
+        </li>
+        <li class="main-sorting-list-item-direction">
+          <input type="radio" name="direction" value="desc" id="main-sorting-down">
+          <lable class="down" for="main-sorting-down">по убыванию</lable>
+        </li>
     </div>
     <section>
       <ul class="main-gds-list">
@@ -290,7 +314,6 @@
 </main>
 <footer>
   <div class="footer-top">
-    <h4 class="visually-hidden">Техномарт</h4>
     <a href="#" class="footer-top-logo">
       ТЕХНОМАРТ
     </a>
