@@ -123,31 +123,24 @@
     </div>
     <div class="main-sorting">
       <p class="main-sorting-topic"><b>Сортировка:</b></p>
-      <form>
       <ul class="main-sorting-list">
         <li class="main-sorting-list-item">
-          <button type="button" name="price-sort" id="price-sort">По цене</button>
-          <label class="visually-hidden" for="price-sort">сортировка по цене</label>
+          <a href="/catalog?sort=price">По цене</a>
         </li>
         <li class="main-sorting-list-item">
-          <button type="button" name="type-sort" id="type-sort">По типу</button>
-          <label class="visually-hidden" for="type-sort">сортировка по типу</label>
+          <a href="/catalog?sort=type">По типу</a>
         </li>
         <li class="main-sorting-list-item">
-         <button type="button" name="functional-sort" id="functional-sort">По функционалу</button>
-         <label class="visually-hidden" for="functional-sort">сортировка по функционалу</label>
+         <a href="/catalog?sort=functional">По функционалу</a>
         </li>
         <li class="main-sorting-list-item-direction-default">
-          <input type="radio" name="direction" value="asc" id="main-sorting-up" checked>
-          <lable class="visually-hidden" for="main-sorting-up">по возрастанию</lable>
+          <a href="/catalog?sort=up">по возрастанию</a>
         </li>
         <li class="main-sorting-list-item-direction">
-          <input type="radio" name="direction" value="desc" id="main-sorting-down">
-          <lable class="visually-hidden" for="main-sorting-down">по убыванию</lable>
-        </li>
+          <a href="/catalog?sort=down">по убыванию</a>
+        </li> 
        </ul>
-     </form>
-    </div>
+     </div>
     <section>
       <ul class="main-gds-list">
         <li>
@@ -356,5 +349,12 @@
     </p>
   </div>
 </footer>
+<form>
+  <label class="visually-hidden" for="close">Закрыть форму</label>
+  <button type="button" id="close"></button>
+  <p>Товар добавлен в корзину</p>
+  <a class="checkout-btn" href="#">Оформить заказ</a>
+  <a class="continue-shopping-btn" href="#">Продолжить покупки</a>
+ </form> 
 </body>
 </html>
