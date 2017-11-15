@@ -41,12 +41,19 @@ a {
 	background-color: #ba2732;
 }	
 
-.header-search input [type="search"] {
+
+.header-search input {
+	border: 0px;
 	font: inherit;
 	background-color: #293449; 
 
-
 }
+
+.header-search input:hover {
+	border: 0px;
+	font: inherit;
+	background-color: #212a3a
+}	
 
 .header-checkout {
 	background-color: #63a63e;
@@ -61,24 +68,18 @@ a {
 	color: (255,255,255,0.51)
 }
 
-.header-marker:hover {
+.header-marker:hover,
+.header-pannier:hover  {
 background-color: #212a3a;
 }
 
-.header-pannier:hover {
-background-color: #212a3a;
-}
 
-.header-marker:active {
-background-color: #161d29;
-color: (255,255,255,0.60)
-}
-
-
+.header-marker:active,
 .header-pannier:active {
 background-color: #161d29;
 color: (255,255,255,0.60)
 }
+
 
 .header-top a {
 	color: #ffffff;
@@ -244,6 +245,7 @@ color: (255,255,255,0.60)
     text-transform: uppercase; 
 
 	background-color: #ee3643;
+	border-radius: 2px; 
 }
 
 .btn-red:hover{
@@ -301,6 +303,10 @@ color: (255,255,255,0.60)
 
 .main-services {
 	background-color: #f4f8fa;
+}
+
+.main-manufact-image:hover {
+	box-shadow: 0px 15px 30px 1px rgba(0,0,0,0.3); 
 }
 
 .main-services h3:first-child {
@@ -374,7 +380,7 @@ color: (255,255,255,0.60)
 	color: #000000;
 }/*список транспортных компаний*/
 
-.foote-container {
+.footer-container {
 	background-color: #32425c;
 
 }
@@ -479,6 +485,43 @@ color: (255,255,255,0.60)
 .footer-bottom-feedback a:active {
 	color: #ee3643;
 }
+
+.write-us fieldset {
+	border: none;
+}
+
+.write-us label {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.users-name,
+.users-email,
+.users-massage {
+	font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+	color: #a9a9a9
+}
+
+.btn-send {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #ffffff;
+
+	background-color: #ee3643;
+	border-radius: 3px; 
+
+}
+
+
+
 
 
 

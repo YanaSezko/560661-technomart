@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&PT+Sans:400,700" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -243,7 +243,7 @@
 			</div>
 		</main>
 		<footer class="footer-all">
-			<div class="foote-container">
+			<div class="footer-container">
 			<div class="footer-top">
 				<a href="#" class="footer-top-logo">ТЕХНОМАРТ</a>
 				<p class="footer-top-contacts">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7(812)555-05-55</p>
@@ -283,19 +283,19 @@
 				</p>
 			</div>
 		</footer>
-		<form>
+		<form class="write-us">
 			<label class="visually-hidden" for="close">Закрыть форму</label>
 			<button type="button" id="close"></button>
 			<fieldset>
 				<legend class="visually-hidden">Контактная информация:</legend>
 				<label for="name">Ваше имя:</label>
-				<input type="text" name="users-name" id="name" placeholder="Представтесь, пожалуйста" required>
+				<input class="users-name" type="text" name="users-name" id="name" placeholder="Представтесь, пожалуйста" required>
 				<label for="email">Ваш e-mail:</label>
-				<input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+				<input class="users-email" type="email" name="email" id="email" placeholder="Для отправки ответа" required>
   			</fieldset>  
 			<label for="message">Текст письма:</label>
-			<textarea rows="5" name="text" id="message" placeholder="В свободной форме"></textarea>
-			<button type="submit" id="send">Отправить</button>	
+			<textarea class="users-massage" rows="5" name="text" id="message" placeholder="В свободной форме"></textarea>
+			<button class="btn-send" type="submit" id="send">Отправить</button>	
 		</form>
 	</body>
 </html>
