@@ -10,7 +10,7 @@
 	<body>
 		<header class="header">
 			<div class="header-top">
-				<p class="logo">Техномарт</p>
+				<p class="logo" tabindex="0">Техномарт</p>
 				<form class="header-search">
 					<input type="search" name="srch" placeholder="Поиск" id="header-search-id">
 					<label class="visually-hidden" for="header-search-id">Поиск</label>
@@ -26,14 +26,14 @@
 					<p class="adress">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
 				</div>
 				<div class="user-navigation">
-					<ul>
-						<li><a href="login.html">Войти</a></li>
+					<ul class="list-hiden user-navigation-list">
+						<li><a href="catalog.html">Войти</a></li>
 						<li><a href="check-in.html">Регистрация</a></li>
 					</ul>
 				</div>
 				<section class="header-nav">
 					<h2 class="visually-hidden">Меню сайта</h2>
-					<ul class="site-navigation">
+					<ul class="list-hiden site-navigation">
 						<li><a href="main.html">Главная</a></li>
 						<li><a href="company.html">Компания</a></li>
 						<li><a href="catalog.html">Каталог</a></li>
@@ -83,7 +83,7 @@
 			<section class="main-gds">
 				<h2 class="main-topic">Популярные товары:</h2>
 				<a href="#" class="btn-red">Все популярные товары</a>
-				<ul class="main-gds-list">
+				<ul class="list-hiden main-gds-list">
 					<li class="main-gds-item">
 						<a href="main-gds-item.html">
 							<h3>
@@ -148,44 +148,44 @@
 			<section class="main-manufact">
 				<h2 class="main-topic">Популярные производители:</h2>
 				<a href="#" class="btn-red">Все производители</a>
-				<ul class="main-manufact-list">
-					<li class="main-manufact-image">
-						<a href="main-manufact-item.html">
+				<ul class="list-hiden main-manufact-list">
+					<li>
+						<a href="#" class="main-manufact-image">
 							<img src="img/manufacturer-1.png" width="126" height="37" alt="BOSCH">
 						</a>
 					</li>
-					<li class="main-manufact-image">
-						<a href="main-manufact-item.html">
+					<li>
+						<a href="#" class="main-manufact-image">>
 							<img src="img/manufacturer-2.png" width="123" height="40" alt="Makita Corporation">
 						</a>
 					</li>
-					<li class="main-manufact-image">
-						<a href="main-manufact-item.html">
+					<li>
+						<a href="#" class="main-manufact-image">
 							<img src="img/manufacturer-3.png" width="146" height="44" alt="DeWALT">
 						</a>
 					</li>
-					<li class="main-manufact-image">
-						<a href="main-manufact-item.html">
+					<li>
+						<a href="#" class="main-manufact-image">
 							<img src="img/manufacturer-4.png" width="181" height="37" alt="Интерскол">
 						</a>
 					</li>
-					<li class="main-manufact-image">
-						<a href="main-manufact-item.html">
+					<li>
+						<a href="#" class="main-manufact-image">
 							<img src="img/manufacturer-5.png" width="169" height="31" alt="HITACHI">
 						</a>
 					</li>
-					<li class="main-manufact-image">
-						<a href="main-manufact-item.html">
+					<li>
+						<a href="#" class="main-manufact-image">
 							<img src="img/manufacturer-6.png" width="121" height="73" alt="LG">
 						</a>
 					</li>
-					<li class="main-manufact-image">
-						<a href="main-manufact-item.html">
+					<li>
+						<a href="#" class="main-manufact-image">
 							<img src="img/manufacturer-7.png" width="151" height="96" alt="AEG">
 						</a>
 					</li>
-					<li class="main-manufact-image">
-						<a href="main-manufact-item.html">
+					<li>
+						<a href="#" class="main-manufact-image">
 							<img src="img/manufacturer-8.png" width="204" height="69" alt="metabo">
 						</a>
 					</li>
@@ -196,15 +196,15 @@
 				<p class="main-services-slogan">Хороший интернет-магазин отличается от плохого не только ценами!<br>
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 				</p>
-				<ul class="main-services-list">
-					<li class="main-services-item">
-						<a href="main-services-delivery.html">Доставка</a>
-					</li>
-					<li class="main-services-item">
-						<a href="main-services-guarantee">Гарантия</a>
+				<ul class="list-hiden main-services-list">
+					<li>
+						<a href="#" class="services-item">Доставка</a>
 					</li>
 					<li>
-						<a href="main-services-credit">Кредит</a>
+						<a href="#" class="services-item">Гарантия</a>
+					</li>
+					<li>
+						<a href="#" class="services-item">Кредит</a>
 					</li>
 				</ul>
 				<h3 class="delivery-topic">ДОСТАВКА</h3>
@@ -224,7 +224,7 @@
 				<h3 class="main-about-us-topic"> КОМПАНИЯ "ТЕХНОМАРТ"</h3>
 				<p class="main-about-us-slogan">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 				<p class="main-about-us-slogan">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
-				<ul class="main-transport-companies-list">
+				<ul class="list-hiden main-transport-companies-list">
 					<li class="main-transport-companies-item">Деловые линии</li>
 					<li class="main-transport-companies-item">Автотрейдинг</li>
 					<li class="main-transport-companies-item">ЖелДорЭкспедиция</li>
@@ -247,14 +247,14 @@
 				<p class="footer-top-contacts">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7(812)555-05-55</p>
 			</div>
 			<div class="footer-top">
-				<ul class="footer-top-list-first">
+				<ul class="list-hiden footer-top-list-first">
 					<li><a href="company.html">Компания</a></li>
 					<li><a href="news.html" >Новости</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="delivery.html">Доставка</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
-				<ul class="footer-top-list-second">
+				<ul class="list-hiden footer-top-list-second">
 					<li><a href="#">Материалы</a></li>
 					<li><a href="#">Техника</a></li>
 					<li><a href="#">Инструменты</a></li>
@@ -266,7 +266,7 @@
 				<p>© 2010-2017 Компания "Техномарт"<br>Все права защищены</p>
 			</div>
 			<div class="footer-bottom-social">
-				<ul>
+				<ul class="list-hiden">
 					<li><a href="#">Вконтакте</a></li>
 					<li><a href="#">Фейсбук</a></li>
 					<li><a href="#">Инстаграм</a></li>
@@ -274,7 +274,7 @@
 			</div>
 			<div class="footer-bottom-feedback">
 				<p>Обратная связь:<br>
-					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+					<a href="mailto:mail@htmlacademy.ru" class="footer-mail">mail@htmlacademy.ru</a>
 				</p>
 				<p>Разработанно —<br>
 					<a href="https://htmlacademy.ru" class="footer-link">htmlacademy.ru</a>
