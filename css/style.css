@@ -838,7 +838,6 @@ color: rgba(255,255,255,0.60)
 html,
 body {
 	min-width: 960px;
-	min-height: 3151px;
 }
 
 .container {
@@ -1492,8 +1491,10 @@ body {
 .wrapper-info-about{
 	width: 100%;
 	background-color: #f2f6f8;
-	min-height: 261px;
-	
+}
+.information	{
+	margin: 0px;
+	padding-bottom: 67px;
 }
 .info-about {
 	padding-top:67px;
@@ -1516,4 +1517,10 @@ body .inner-page {
 }
 .main-catalog{
 	min-height: 1540px;
+}
+.inner-page .header-pannier {
+	background-color: #ee3643;
+}
+.inner-page .header-pannier:hover  {
+background-color:  #ca2c37;
 }
