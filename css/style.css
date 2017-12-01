@@ -1176,6 +1176,20 @@ body {
 	opacity: 1;
 }
 
+.header-search:focus::before{
+	content: "";
+	width: 17px;
+	height:17px;
+	margin-right: 0px;
+	background-image: url("../img/icon-search-focus.svg");
+	background-color: inherit;
+	background-position:0 0;
+	position: absolute;
+	left:17px;
+	top:12px;
+	opacity: 1;
+}
+
 .header-search{
 	margin:0px;
 	width: 270px;
