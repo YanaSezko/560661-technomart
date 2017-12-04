@@ -142,6 +142,7 @@ input[type="search"]:focus {
     position: relative;
     top:25px;
     right: 15px;
+
    
 }/*номер телефона*/
 
@@ -178,6 +179,34 @@ input[type="search"]:focus {
 	justify-content: space-between;
 	width: 282px;
 	position: relative;
+}
+
+.user-navigation-link{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: space-around;
+	width: 282px;
+	position: relative;
+	top:46px;
+	left: -8px;
+}
+.user-navigation-link li:last-child{
+	position: relative;
+	top:-4px;
+	left: -20px;
+}
+.user-navigation-link li:last-child::before{
+	content: "";
+    display: block;
+    position: relative;
+    top: 13px;
+    left: -17px;
+    border-radius: 5px;
+    width: 4px;
+    height: 4px;
+    margin: 0px;
+    background-color: #32425c;
 }
 
 .login{
@@ -400,6 +429,36 @@ input[type="search"]:focus {
 .block-link:focus{
 	background-color: rgba(0,0,0,0.3);
 
+}
+
+.topic-gallery {
+	display: block;
+	z-index: 100;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 36px;
+	line-height: 30px;
+	font-weight: 700;
+	
+	color: #ffffff;
+    text-transform: uppercase; 
+    position: relative;
+left: 23px;
+ top: -11px;
+   
+}
+
+.topic-gallery-slogan{
+	display: block;
+	z-index: 100;
+	font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+     position: relative;
+left: 25px;
+ top: -61px;
+ margin-bottom: 0px;
 }
 
 .btn-red {
@@ -797,6 +856,7 @@ input[type="search"]:focus {
 	
 
 }
+
 .users-name::after
 {
 	content: "";
@@ -976,7 +1036,7 @@ input[type="search"]:focus {
 	border-radius: 2px;
 }
 
-.button-buy:hover {
+.actions .button-buy:hover {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -988,7 +1048,7 @@ input[type="search"]:focus {
 	border-radius: 2px;
 }
 
-.button-buy:focus {
+.actions .button-buy:focus {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -999,7 +1059,7 @@ input[type="search"]:focus {
 	border-radius: 2px;
 }
 
-.button-mark {
+.actions .button-mark {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -1012,7 +1072,7 @@ input[type="search"]:focus {
 	border-style: solid;
 }
 
-.button-mark:hover {
+.actions .button-mark:hover {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -1025,7 +1085,7 @@ input[type="search"]:focus {
 	border-style: solid;
 }
 
-.button-mark:focus {
+.actions .button-mark:focus {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -1173,13 +1233,13 @@ body {
 .header-search-block {
 	min-width: 270px;
 	padding-left: 48px;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 11px;
+	padding-bottom: 11px;
 	padding-right:50px;
 
 }
 
-.header-search::before{
+.header-search::after{
 	content: "";
 	width: 17px;
 	height:17px;
@@ -1192,7 +1252,7 @@ body {
 	top:12px;
 	opacity: 0.3;
 }
-.header-search:hover::before{
+.header-search:hover::after{
 	content: "";
 	width: 17px;
 	height:17px;
@@ -1219,6 +1279,10 @@ input[type="search"]:focus ~ .header-search::after {
 	top:12px;
 	opacity: 1;
 	z-index:50;
+}
+
+.header-search-block:focus {
+    background: #ffffff url(../img/icon-search-focus.svg) no-repeat 17px 12px;
 }
 
 .header-search{
@@ -1302,7 +1366,17 @@ input[type="search"]:focus ~ .header-search::after {
 	padding-right:30px;
 	position: relative;
 	
-}	
+}
+.inner-page .header-pannier{
+	min-width:75px;
+	height: 18px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left:50px;
+	padding-right:25px;
+	position: relative;
+}
+
 
 .header-checkout{
 	min-width: 110px;
@@ -1369,8 +1443,8 @@ input[type="search"]:focus ~ .header-search::after {
 	margin: 0px;
 	padding: 0px;
 	display: flex;
-	width: 100%
- 	padding-left:20px;
+	width: 100%;
+ 	
  	
 }
 
@@ -1503,7 +1577,7 @@ li .contacts{
 	border-style: solid;
     border-color: #eaeaea;
     border-width: 1px; 
-    text-align:center;
+    
 
     position: relative;
     display: inline-block;
@@ -1554,22 +1628,20 @@ li .contacts{
 	background-color: rgba(255,255,255,0.9);
 	z-index: 10;
 }
+
 .main-gds-image{
 	width: 218px;
-	height: 168px;
+	height: 167px;
+	margin-bottom: 0px;
 }
 .main-gds-image img{
 	max-width: 100%;
+
 }
 .main-gds-item{
 	position: relative;
 }
 
-.main-gds-category{
-	position: relative;
-	top: -15px;
-	
-}
 .BFG-9000{
 	position: relative;
 	top:-8px;
@@ -1592,13 +1664,13 @@ li .contacts{
 }
 
 .main-gds-id{
-	position: relative;
-	top: -15px;
-}
-.old-price{
-	position: relative;
-	top: -5px;
 	
+	margin: 0px;
+}
+
+
+.old-price{
+	margin-top: 11px;
 }
 .main-gds-item-price{
 	position: absolute;
@@ -1668,15 +1740,12 @@ li .contacts{
 .main-gds-item  h3 {
 	margin: 0px;
 }
-.main-gds-item .main-gds-category{
-	min-height:40px;
-    padding:0 25px;
-    margin-top:10px;
-    margin-bottom:15px;
- }
 
 .main-manufact{
 	margin-bottom: 65px;
+}
+.main-gds-category{
+	margin:0px;
 }
 
 .manufact-item{
@@ -1711,7 +1780,7 @@ li .contacts{
 
 .main-services{
 	padding: 0px;
-	min-height: 522px;
+	width: 100%;
 	margin-bottom: 82px; 
 }
 
@@ -1726,6 +1795,7 @@ li .contacts{
 	margin: 0px;
 	display: flex;
 	justify-content: flex-start;
+	padding-bottom: 60px;
 }
 
 .block-services{
@@ -1746,13 +1816,29 @@ li .contacts{
     z-index: 100;
 	margin-bottom: 69px;
 }
+.services-slogan{
+	width: 400px;
+	margin: 0px;
+	
+
+	font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+
+}
+.services-slogan-bottom{
+	margin-bottom: 69px;
+	margin-top: 0px;
+}
 
 .main-services-list{
 	display: inline-block;
 	margin:0px;
 	padding: 0px;
 	width: 239px;
-	min-height: 279px;
+	
 	padding-left: 0px;
 	position: relative;
 }
@@ -1778,7 +1864,7 @@ li .contacts{
 	padding-top: 0px;
 	width: 340px;
 	
-	padding-left: 82px;
+	margin-left: 82px;
 	position: relative;
 
 }
@@ -1805,19 +1891,33 @@ li .contacts{
 
 .main-about-us-topic{
 	margin-top: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 	text-transform: uppercase;
 }
 
 .main-about-us-slogan{
 	margin-top: 0px; 
-	margin-bottom: 22px;
+	margin-bottom: 24px;
 }
 
 .main-transport-companies-list{
+	position: relative;
+	top:-3px;
 	padding-left: 37px;
-	padding-bottom: 36px;
+	padding-bottom: 31px;
 	margin: 0px;
+}
+.companies-item::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 10px;
+    left: -37px;
+   
+    width: 25px;
+    height: 2px;
+    
+    background-color: #fb565a;
 }
 
 .main-contacts-topic{
@@ -1826,7 +1926,7 @@ li .contacts{
 }
 
 .companies-item{
-	margin-top: 20px;
+	margin-top: 17px;
 	margin-bottom: 0px;
 }
 
@@ -1992,10 +2092,11 @@ li .contacts{
 
 .btn-about-us{
 	display: block;
-	width: 220px;
+	width: 219px;
 	padding-top:11px;
 	padding-bottom: 9px;
 	padding-left: 1px;
+	border-radius: 3px;
 }
 
 
@@ -2011,22 +2112,22 @@ li .contacts{
 }
 
 .gallery-button .gallery-button-back{ 
-	position: relative;
+	position: absolute;
 	z-index: 2; 
 	top:111px; 
     left: 24px; 
 }
 .gallery-button .gallery-button-next{ 
-	position: relative;
+	position: absolute;
 	z-index: 2; 
-	top:68px; 
+	top:111px; 
     left: 578px; 
 }
 
 .btn-catalog { 
-	position: relative;
+	position: absolute;
 	z-index: 2; 
-	top:116px; 
+	top: 206px; 
     left: 25px; 
 }
 
@@ -2034,7 +2135,60 @@ li .contacts{
 	position: absolute;
 	z-index: 1; 
 }
+.slider-controls{
+	position: absolute;
+  left: 100px;
+  bottom: 104px;
+  z-index: 200;
+  
+  width: 160px;
+  height: 18px;
 
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+.slider-controls label{ 
+	position: relative;
+  
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+.slider-controls label::after {
+  content: "";
+  
+  position: absolute;
+  top:197px;
+  left: 215px;
+  z-index: 1;
+  
+  width: 10px;
+  height: 10px;
+  
+  background: #ffffff;
+  
+  border-radius: 50%;
+}
+
+.slider-controls-item-1::before {
+  content: "";
+  position: absolute;
+  left: 221px;
+  top: 203px;
+  z-index: 2;
+  width: 6px;
+  height: 6px;
+  margin: -4px;
+  background-color: #ee3643;
+  
+  border-radius: 50%;
+}
 .gallery-button-back{
 	position: absolute;
 	top:40px;
@@ -2261,9 +2415,8 @@ li .contacts{
 body .inner-page {
 	height: 2249px;
 }
-.main-part{
-	
-	margin-bottom: 85px;
+.footer-all{
+	margin-top: 85px;
 }
 .main-catalog{
 	min-height: 1540px;
