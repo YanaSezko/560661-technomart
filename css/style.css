@@ -2213,8 +2213,8 @@ li .contacts{
 	padding-right: 52px;
 }
 .write-us {
-	display: none;
-}	
+	display:fixed;
+	}	
 
 .btn-about-us{
 	display: block;
@@ -2450,7 +2450,7 @@ li .contacts{
 	
 }
 .main-sorting-list{
-	min-width: 431px;
+	min-width: 420px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -2462,13 +2462,15 @@ li .contacts{
 
 .direction-up-default{
 	position: absolute;
-	right: 20px;
+	right: 10px;
+	top:20px;
 
 }
 
 .direction-down{
 	position: relative;
-	right: -13px;
+	top:2px;
+	right: -23px;
 }
 
 .main-sorting {
