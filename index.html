@@ -378,23 +378,39 @@
 			</div>
 
 		</footer>
-		<form class="write-us">
-			<label class="visually-hidden" for="close">Закрыть форму</label>
-			<button type="button" id="close"></button>
-			<fieldset>
-				<legend class="visually-hidden">Контактная информация:</legend>
-			<p>
+		<section class="form form-write-us">
+			
+			<form class="form-top">
+			 <p>
 				<label for="name">Ваше имя:</label>
 				<input class="users-name" type="text" name="users-name" id="name" placeholder="Представтесь, пожалуйста" required>
+				
 			</p>
 			<p>
 				<label for="email">Ваш e-mail:</label>
 				<input class="users-email" type="email" name="email" id="email" placeholder="Для отправки ответа" required>
-			</p>	
-  			</fieldset>  
-			<label for="message">Текст письма:</label>
+			</p>	</form>
+  			<p>  
+			<label class="textarea-topic" for="message">Текст письма:</label><br>
 			<textarea class="users-massage" rows="5" name="text" id="message" placeholder="В свободной форме"></textarea>
-			<button class="btn-send" type="submit" id="send">Отправить</button>	
-		</form>
+		   </p>
+		
+		<div class="form-bottom">
+			<button class="btn-red btn-send" type="submit" id="send">Отправить</button>
+		</div>
+			
+			
+				<button class="form-close" type="button">Закрыть</button>	
+		
+
+		</section>	
+
+		<section class="form form-map">
+			<h3 class="visually-hidden">Как до нас добраться</h3>
+			<p>
+				<img src="img/big-map.png" width="940" height="446" alt="Карта">
+			</p>
+			<button class="form-close" type="button">Закрыть</button>	
+		</section>
 	</body>
 </html>
