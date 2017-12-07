@@ -2380,6 +2380,7 @@ li .contacts{
 /*сеточные стили для внутренней страницы*/
 .cart {
 	 display: none
+
 }
 
 .inner-page header {
@@ -2894,7 +2895,7 @@ input[type="radio"].visually-hidden {
     width: 460px;
 	padding: 46px 80px;
 	z-index: 1000; 
-	margin-left: -230px;
+	margin-left: -310px;
 }
 .form-close{
 	width: 25px;
@@ -3037,8 +3038,10 @@ textarea{
 
 
 .form-cart{
-top:120px;
-margin-left: 310px;
+	 top: 120px;
+  left: 50%;
+  margin-left: -310px;
+
 z-index: 1000;
 	width: 620px;
 	height: 270px;
@@ -3103,7 +3106,7 @@ margin-left: 180px;
 
 /*карта*/
 .form-map{
-	display: none;
+	
 	top:50%;
 	left: 50%;
 margin:0;
