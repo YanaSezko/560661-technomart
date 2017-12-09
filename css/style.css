@@ -54,10 +54,19 @@ a {
 .logo:focus {
 	background-color: #ba2732;
 }	
-.header-search-block::-webkit-input-placeholder {
+.header-search-block::-webkit-input-placeholder{
  	color:#ffffff;
  	z-index: 1;
 }
+.header-search-block::-moz-placeholder{
+ 	color:#ffffff;
+ 	z-index: 1;
+}
+.header-search-block:-ms-input-placeholder{
+ 	color:#ffffff;
+ 	z-index: 1;
+}
+
 
 .header-search input {
 	padding-right: 70px;
@@ -801,7 +810,7 @@ left: 25px;
 	background-color: #ffffff;
 }
 
-.users-name {
+.user-name {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 21px;
 	color: #000000; 
@@ -816,7 +825,7 @@ left: 25px;
 
 	background-color: #ffffff;
 }
-.users-name::before{
+.user-name::before{
 	content: "";
 	width: 20px;
 	height: 18px;
@@ -831,7 +840,7 @@ left: 25px;
 
 }
 
-.users-name::after
+.user-name::after
 {
 	content: "";
 	width: 20px;
@@ -846,21 +855,21 @@ left: 25px;
 	
 
 }
-.users-name:hover::before{
+.user-name:hover::before{
 	opacity: 1;
 	background-image: url("../img/icon-user-hover.svg");
 }
 
-.users-name:hover::after{
+.user-name:hover::after{
 	opacity: 1;
 	background-image: url("../img/icon-logout-hover.svg");
 }
-.users-name:focus::before{
+.user-name:focus::before{
 	opacity: 0.3;
 	background-image: url("../img/icon-user.svg");
 }
 
-.users-name:focus::after{
+.user-name:focus::after{
 	opacity: 0.3;
 	background-image: url("../img/icon-logout.svg");
 }
@@ -874,7 +883,7 @@ left: 25px;
 	background-color: #f1f5f7;
 }
 
-.users-name:focus {
+.user-name:focus {
 	color: rgba(0,0,0,0.3);
 }
 
@@ -1738,6 +1747,7 @@ li .contacts{
 
     position: relative;
     display: inline-block;
+    vertical-align:middle;
 }
 .flag .actions::before{
 	content: "";
@@ -1972,7 +1982,7 @@ li .contacts{
 .main-services{
 	padding: 0px;
 	width: 100%;
-	margin-bottom: 82px; 
+	margin-bottom: 86px; 
 }
 
 .wrapper-services{
@@ -1986,7 +1996,7 @@ li .contacts{
 	margin: 0px;
 	display: flex;
 	justify-content: flex-start;
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 }
 
 .block-services{
@@ -1998,15 +2008,16 @@ li .contacts{
 .main-services-topic{
 	margin-top: 0px;
 	padding: 0px;
-	margin-bottom: 29px;
+	margin-bottom: 28px;
 
 }
 
 .main-services-slogan{
 	position: relative;
     z-index: 100;
-	margin-bottom: 69px;
+	margin:0px;
 }
+
 .services-slogan{
 	
 	margin: 0px;
@@ -2031,6 +2042,7 @@ li .contacts{
 	
 	padding-left: 0px;
 	position: relative;
+	vertical-align: middle;
 }
 .main-services-list::after{
 	content: "";
@@ -2077,6 +2089,7 @@ li .contacts{
 	padding: 0px;
 	min-height: 300px;
 	width: 560px;
+
 }
 
 .main-about-us-topic{
@@ -2094,7 +2107,7 @@ li .contacts{
 	position: relative;
 	top:-3px;
 	padding-left: 37px;
-	padding-bottom: 31px;
+	padding-bottom: 34px;
 	margin: 0px;
 }
 .companies-item::before {
@@ -2109,7 +2122,10 @@ li .contacts{
     
     background-color: #fb565a;
 }
-
+.about-us,
+.paragraph{
+	margin:0;
+}
 .main-contacts-topic{
 	margin: 0px;
 	margin-bottom: 30px;
@@ -2128,12 +2144,14 @@ li .contacts{
 
 .main-contacts-slogan{
 	margin: 0px;
-	padding-bottom: 30px;
+	padding:0px;
+	
 }
 
 .main-contacts-map{
 	padding-bottom: 32px;
 	margin: 0px;
+	margin-top: 31px;
 }
 
 .wrapper-about-us{
@@ -2166,7 +2184,7 @@ li .contacts{
 	padding-bottom: 19px;
 	margin: 0px;
 	text-align: center;
-	margin-bottom: 29px;
+	margin-bottom: 28px;
 }
 
 .footer-top-contacts{
@@ -2221,8 +2239,11 @@ li .contacts{
 	margin: 0px;
 	padding: 0px;
 	width: 300px;
-	padding-top: 5px;
+	padding-top: 4px;
 	padding-left: 2px;
+}
+.footer-bottom-copyright p{
+	margin: 0px;
 }
 
 .footer-bottom-social ul{
@@ -2256,7 +2277,7 @@ li .contacts{
 }
 
 .footer-bottom-feedback{
-	width: 340px;
+	width: auto;
 	
 }
 
@@ -2268,13 +2289,17 @@ li .contacts{
 
 .wrapper-feedback{
 	padding:0px;
-	padding-top: 4px;
 	margin-left: 120px;
-	display: flex;
-	
+	display:flex;	
+	justify-content: space-around;
 }
-.wrapper-feedback p:first-child{
-	padding-right: 52px;
+.wrapper-feedback p{
+	
+	margin: 0;
+}
+
+.footer-feedback{
+	margin-right: 52px;
 }
 .write-us {
 	display:fixed;
@@ -2345,7 +2370,7 @@ li .contacts{
   width: 10px;
   height: 10px;
   padding: 5px;
-  
+  vertical-align: top;
   border-radius: 50%;
   cursor: pointer;
 
@@ -2366,7 +2391,9 @@ li .contacts{
   border-radius: 50%;
 }
 
-
+.paragraph{
+	margin-bottom: 24px;
+}
 
 .gallery-button-back{
 	position: absolute;
@@ -2544,6 +2571,7 @@ li .contacts{
 .pagination-item{
 	display: inline-block;
 	margin-right: 6px;
+	vertical-align: middle;
 }
 
 .pagination-number{
@@ -2842,7 +2870,7 @@ body .inner-page {
 
 }
 .footer-all{
-	margin-top: 85px;
+	margin-top: 86px;
 }
 .main-catalog{
 	min-height: 1540px;
@@ -2878,8 +2906,6 @@ input[type="radio"].visually-hidden {
 }
 /*форма главной страницы*/
 .form{
-	
-
 	position: fixed;
 	color: #000000;
 	background-color: #ffffff;
@@ -2888,7 +2914,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-write-us{
-
+	display:none;
 	top:120px;
 	left: 50%;
  
@@ -2896,6 +2922,10 @@ input[type="radio"].visually-hidden {
 	padding: 46px 80px;
 	z-index: 1000; 
 	margin-left: -310px;
+}
+
+.form-show{
+	display: block;	
 }
 .form-close{
 	width: 25px;
@@ -2940,10 +2970,14 @@ textarea::-webkit-input-placeholder {
  	color: #a9a9a9;
  	z-index: 1;
  }
+ .textarea-topic{
+ 	margin-bottom: 30px;
+ }
 
 textarea{
 	position: relative;
-	top:-30px;
+	top:-10px;
+	margin-bottom: 28px;
 }
 .form-top p{
 	width: 220px;
@@ -3038,6 +3072,8 @@ textarea{
 
 
 .form-cart{
+	display: none;
+
 	 top: 120px;
   left: 50%;
   margin-left: -310px;
@@ -3106,7 +3142,7 @@ margin-left: 180px;
 
 /*карта*/
 .form-map{
-	
+	display: none;
 	top:50%;
 	left: 50%;
 margin:0;
