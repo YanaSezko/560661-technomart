@@ -126,8 +126,6 @@ input[type="search"]:focus {
     position: relative;
     margin: 0;
 }
-/*номер телефона*/
-
 .tel::before {
     content: "";
     width: 18px;
@@ -149,8 +147,6 @@ input[type="search"]:focus {
     text-align: center;
     margin: 0;
 }
-/*адрес*/
-
 .user-navigation-list {
     margin: 0px;
     padding: 0px;
@@ -289,8 +285,6 @@ li .contacts {
     background-color: #ffbf47;
     position: relative;
 }
-/*блок материалы*/
-
 .block-materials::after {
     content: "";
     width: 60px;
@@ -338,8 +332,6 @@ li .contacts {
     top: 32px;
     z-index: 2;
 }
-/*блок инструменты*/
-
 .block-mechanism {
     background-color: #dc91d8;
 }
@@ -357,8 +349,6 @@ li .contacts {
     z-index: 2;
     ;
 }
-/*блок техника*/
-
 .block-sale {
     background-color: #8ed78f;
 }
@@ -375,8 +365,6 @@ li .contacts {
     top: 25px;
     z-index: 2;
 }
-/*блок скидки*/
-
 .block-free {
     background-color: #ffc047;
 }
@@ -393,8 +381,6 @@ li .contacts {
     top: 31px;
     z-index: 2;
 }
-/*блок доставка*/
-
 .block-link {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
@@ -452,8 +438,6 @@ li .contacts {
     color: #000000;
     background-color: #ffffff;
 }
-/*имя товара*/
-
 .old-price {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
@@ -466,8 +450,6 @@ li .contacts {
     margin-bottom: 10px;
     background-color: #ffffff;
 }
-/*старая цена*/
-
 .button {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
@@ -476,8 +458,6 @@ li .contacts {
     color: #ffffff;
     background-color: #ee3643;
 }
-/*цена товара*/
-
 .main-services {
     background-color: #f4f8fa;
 }
@@ -494,46 +474,6 @@ li .contacts {
     align-content: center;
     display: flex;
 }
-.image-BOSCH {
-    position: absolute;
-    top: 52px;
-    left: 46px;
-}
-.image-Makita {
-    position: absolute;
-    top: 49px;
-    left: 47px;
-}
-.image-DeWALT {
-    position: absolute;
-    top: 47px;
-    left: 36px;
-}
-.image-interscol {
-    position: absolute;
-    top: 52px;
-    left: 18px;
-}
-.image-hitachi {
-    position: absolute;
-    top: 57px;
-    left: 27px;
-}
-.image-lg {
-    position: absolute;
-    top: 34px;
-    left: 47px;
-}
-.image-aeg {
-    position: absolute;
-    top: 22px;
-    left: 34px;
-}
-.image-metabo {
-    position: absolute;
-    top: 33px;
-    left: 9px;
-}
 .main-manufact-image:hover {
     box-shadow: 0px 15px 30px 1px rgba(0, 0, 0, 0.3);
 }
@@ -547,8 +487,6 @@ li .contacts {
     font-weight: 400;
     color: #000000;
 }
-/*сервисы*/
-
 .delivery-topic,
 .guarantee-topic,
 .credit-topic {
@@ -558,8 +496,6 @@ li .contacts {
     font-weight: 400;
     color: #32425c;
 }
-/*доставка, гарантия, кредит*/
-
 .main-services p {
     font: inherit;
 }
@@ -571,8 +507,6 @@ li .contacts {
     color: #ffffff;
     background: #32425c;
 }
-/*покой*/
-
 .main-services-list a:hover {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
@@ -581,8 +515,6 @@ li .contacts {
     color: #ffffff;
     background: #293449;
 }
-/*наведение*/
-
 .main-services-list .services-item-active {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
@@ -591,8 +523,6 @@ li .contacts {
     color: #32425c;
     background: #ffffff;
 }
-/*актив*/
-
 .line hr {
     position: absolute;
     left: 205px;
@@ -622,8 +552,6 @@ li .contacts {
     font-weight: 400;
     color: #000000;
 }
-/*список транспортных компаний*/
-
 .footer-container {
     background-color: #32425c;
 }
@@ -636,8 +564,6 @@ li .contacts {
     box-shadow: inset 0 -5px 0 0 #b52933;
     background-color: #ee3643;
 }
-/*логотип*/
-
 .footer-top-contacts {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
@@ -711,8 +637,6 @@ li .contacts {
 .footer-bottom-feedback a:focus {
     color: #ee3643;
 }
-/*стили для каталога:*/
-
 .inner-page {
     color: #000000;
     background-color: #ffffff;
@@ -1079,8 +1003,6 @@ li .contacts {
     background-color: #ffffff;
     border-radius: 2px;
 }
-/* ----- Сеточные стили ----- */
-
 html,
 body {
     min-width: 960px;
@@ -1293,7 +1215,7 @@ input[type="search"]:focus ~ .header-search::after {
 .site-slogan {
     margin: 0px;
     width: 200px;
-    padding-top: 39px;
+    padding-top: 49px;
     padding-bottom: 29px;
     padding-left: 52px;
 }
@@ -1306,7 +1228,7 @@ input[type="search"]:focus ~ .header-search::after {
 .inner-page .site-slogan {
     margin: 0px;
     width: 200px;
-    padding-top: 39px;
+    padding-top: 50px;
     padding-bottom: 30px;
     padding-left: 52px;
     padding-right: 20px;
@@ -1319,12 +1241,6 @@ input[type="search"]:focus ~ .header-search::after {
 .container {
     padding: 0px;
 }
-.main-container-block {
-    padding: 0px;
-    width: 940px;
-    min-height: 409px;
-    margin-bottom: 32px;
-}
 .block {
     padding: 0px;
     margin-bottom: 20px;
@@ -1334,12 +1250,13 @@ input[type="search"]:focus ~ .header-search::after {
 .slider {
     margin: 0px;
     padding: 0px;
-    transform: translateY(-25px);
+    position: relative;
     flex-grow: 1;
 }
 .slider-item {
     display: none;
     height: 266px;
+    margin-right: 20px;
 }
 .slider-item:nth-child(1) {
     display: none;
@@ -1375,10 +1292,10 @@ input[type="search"]:focus ~ .header-search::after {
     border: 2px #ffffff solid;
 }
 .slider-item h3 {
-    max-width: 216px;
     margin: 0;
     padding-top: 25px;
     padding-left: 25px;
+    padding-right: 100px;
     font-size: 36px;
     line-height: 30px;
     font-family: "Cuprum", Arial, sans-serif;
@@ -1387,10 +1304,10 @@ input[type="search"]:focus ~ .header-search::after {
     text-transform: uppercase;
 }
 .slider-item p {
-    max-width: 230px;
     margin: 0;
+    padding-right: 100px;
     margin-top: 5px;
-    margin-left: 25px;
+    padding-left: 25px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -1400,13 +1317,19 @@ input[type="search"]:focus ~ .header-search::after {
     background-image: url("../img/icon-left.svg");
     width: 22px;
     height: 41px;
-    transform: translate(25px, 30px);
+    position: absolute;
+    left: 26px;
+    top: 113px;
+    z-index: 1000;
 }
 .btn-next {
     background-image: url("../img/icon-right.svg");
     width: 22px;
     height: 41px;
-    transform: translate(577px, -10px);
+    position: absolute;
+    right: 39px;
+    top: 113px;
+    z-index: 1000;
 }
 .slider-item-button {
     display: block;
@@ -1416,13 +1339,17 @@ input[type="search"]:focus ~ .header-search::after {
     padding-right: 45px;
     width: 100px;
     border-radius: 3px;
-    transform: translate(25px, 41px);
+    position: absolute;
+    bottom: 22px;
+    left: 25px;
 }
 .slider-controls {
-    transform: translate(295px, 240px);
+    position: absolute;
+    bottom: 25px;
+    left: 290px;
 }
 .slider-controls label {
-    margin: 2px;
+    margin: 4px;
     display: inline-block;
     width: 2px;
     height: 2px;
@@ -1430,8 +1357,6 @@ input[type="search"]:focus ~ .header-search::after {
     border-radius: 50%;
     cursor: pointer;
     padding: 2px;
-    /* Временно для демонстрации */
-    
     background-color: #ffffff;
     border: 2px #ffffff solid;
 }
@@ -1448,6 +1373,7 @@ input[type="search"]:focus ~ .header-search::after {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 34px;
 }
 .wrapper-main-gds {
     display: flex;
@@ -1469,30 +1395,31 @@ input[type="search"]:focus ~ .header-search::after {
     padding-top: 28px;
     padding-bottom: 30px;
 }
+.container .main-topic {
+    width: 500px;
+}
 .wrapper-main-manufact .main-topic {
     margin: 0px;
     padding: 0px;
-    width: 940px;
+    width: 500px;
     padding-left: 25px;
     padding-top: 31px;
     padding-bottom: 29px;
 }
 .btn-all-gds {
-    width: 257px;
     height: 18px;
     position: relative;
     top: 23px;
     right: 24px;
-    padding: 10px 36px;
+    padding: 10px 54px;
     border-radius: 3px;
 }
 .btn-manufact {
-    width: 257px;
     height: 18px;
     position: relative;
     top: 26px;
     right: 24px;
-    padding: 10px 36px;
+    padding: 10px 69px;
     border-radius: 3px;
 }
 .wrapper-gds {
@@ -1550,6 +1477,7 @@ input[type="search"]:focus ~ .header-search::after {
     justify-content: space-between;
     text-align: center;
     flex-wrap: wrap;
+    margin: auto;
 }
 .main-gds-item .flag {
     position: absolute;
@@ -1571,47 +1499,26 @@ input[type="search"]:focus ~ .header-search::after {
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 10;
 }
-.main-gds-image {
-    margin: 0;
-    width: 218px;
-    height: 166px;
-    margin-top: 13px;
+.inner-page .main-gds-image {
+    display: flex;
 }
-.main-gds-image img {
-    max-width: 100%;
+.inner-page .image-center {
+    margin: 10px auto auto;
+}
+.main-gds-image {
+    display: flex;
+    width:93%;
+    height: 120px;
 }
 .main-gds-item {
     position: relative;
 }
-.BFG-9000 {
-    position: relative;
-    top: -8px;
-    right: 1px;
-}
-.BFG-3000 {
-    position: relative;
-    top: 15px;
-    right: 6px;
-}
-.BFG-6000 {
-    position: relative;
-    top: 8px;
-    right: 11px;
-}
-.BFG-2000 {
-    position: relative;
-    top: 15px;
-    right: 14px;
-}
-.main-gds-id {
-    margin: 0px;
-}
 .old-price {
-    margin-top: 11px;
+    margin-top: 8px;
 }
 .main-gds-item-price {
     position: absolute;
-    bottom: 12px;
+    bottom: 10px;
     left: 42px;
 }
 .main-gds-item-price .button {
@@ -1714,8 +1621,20 @@ input[type="search"]:focus ~ .header-search::after {
 .main-manufact {
     margin-bottom: 65px;
 }
-.main-gds-category {
-    margin: 0px;
+.title-gds {
+    min-height: 40px;
+    padding: 0 15px;
+    margin: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 40px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #ffffff;
+}
+.inner-page .title-gds {
+    padding: 0 15px;
+    margin-top: 45px;
 }
 .manufact-item {
     width: 218px;
@@ -1760,21 +1679,23 @@ input[type="search"]:focus ~ .header-search::after {
     margin: 0px;
     display: flex;
     justify-content: flex-start;
-    padding-bottom: 100px;
+    margin-bottom: 5px;
 }
 .block-services {
     padding-top: 0px;
     min-width: 500px;
+    margin-bottom: 72px;
 }
 .main-services-topic {
     margin-top: 0px;
     padding: 0px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 .main-services-slogan {
     position: relative;
     z-index: 100;
     margin: 0px;
+    width: 300px;
 }
 .services-slogan {
     margin: 0px;
@@ -1783,10 +1704,7 @@ input[type="search"]:focus ~ .header-search::after {
     line-height: 24px;
     font-weight: 400;
     color: #000000;
-}
-.services-slogan-bottom {
-    margin-bottom: 69px;
-    margin-top: 0px;
+    width: 410px;
 }
 .main-services-list {
     display: inline-block;
@@ -1812,67 +1730,46 @@ input[type="search"]:focus ~ .header-search::after {
 .services-topic {
     padding: 0px;
     margin-top: 4px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 .wrapper-block-delivery {
     display: block;
     padding-top: 0px;
-    width: 278px;
+    width: 700px;
     margin-left: 82px;
     position: relative;
-}
-.wrapper-block-delivery::after {
-    content: "";
-    width: 468px;
-    height: 261px;
-    margin-right: 0px;
     background-image: url("../img/delivery.png");
-    background-color: inherit;
-    background-position: 0 0;
-    position: absolute;
-    right: -340px;
-    top: 23px;
-    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: 100% 130%;
+    height: 275px;
 }
 .wrapper-block-guarantee {
     display: none;
     padding-top: 0px;
-    width: 375px;
+    width: 705px;
     margin-left: 82px;
     position: relative;
-}
-.wrapper-block-guarantee::after {
-    content: "";
-    width: 500px;
-    height: 283px;
-    margin-right: 0px;
     background-image: url("../img/garant.png");
-    background-color: inherit;
-    background-position: 0 0;
-    position: absolute;
-    right: -260px;
-    top: -5px;
-    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    height: 275px;
 }
 .wrapper-block-credit {
     display: none;
     padding-top: 0px;
-    width: 450px;
+    width: 705px;
     margin-left: 82px;
     position: relative;
-}
-.wrapper-block-credit::after {
-    content: "";
-    width: 500px;
-    height: 283px;
-    margin-right: 0px;
     background-image: url("../img/credit.png");
-    background-color: inherit;
-    background-position: 0 0;
-    position: absolute;
-    right: -200px;
-    top: -5px;
-    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    height: 275px;
+}
+.send-request {
+    margin-top: 30px;
+    border: none;
+    width: 195px;
+    height: 38px;
 }
 .main-about-us {
     padding: 0px;
@@ -1894,7 +1791,7 @@ input[type="search"]:focus ~ .header-search::after {
     padding-left: 37px;
     padding-bottom: 34px;
     margin: 0px;
-    margin-top: 22px;
+    margin-top: 24px;
 }
 .companies-item::before {
     content: "";
@@ -1930,7 +1827,7 @@ input[type="search"]:focus ~ .header-search::after {
 .main-contacts-map {
     padding-bottom: 32px;
     margin: 0px;
-    margin-top: 31px;
+    margin-top: 33px;
 }
 .wrapper-about-us {
     display: flex;
@@ -2076,8 +1973,6 @@ input[type="search"]:focus ~ .header-search::after {
     top: 206px;
     left: 25px;
 }
-/*сеточные стили для внутренней страницы*/
-
 .cart {
     display: none
 }
@@ -2463,7 +2358,7 @@ input[type="search"]:focus ~ .header-search::after {
 }
 .information {
     margin: 0px;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
 }
 .info-about {
     padding-top: 67px;
@@ -2508,8 +2403,6 @@ input[type="radio"].visually-hidden {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-/*форма главной страницы*/
-
 .form {
     position: fixed;
     color: #000000;
@@ -2603,7 +2496,7 @@ textarea::-webkit-input-placeholder {
     font-weight: 400;
     color: #a9a9a9;
     box-sizing: border-box;
-    width: 220px;
+    width: 100%;
     padding: 8px 14px;
     margin: 0;
 }
@@ -2622,6 +2515,9 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 10px;
     display: block;
 }
+.write-us-inp {
+    width: 220px;
+}
 .users-name,
 .users-email,
 .users-massage {
@@ -2633,8 +2529,6 @@ textarea::-webkit-input-placeholder {
     border: 2px #dee3e4 solid;
     border-radius: 2px;
 }
-/*форма добавления товара*/
-
 .form-cart {
     display: none;
     top: 120px;
@@ -2691,8 +2585,6 @@ textarea::-webkit-input-placeholder {
 .form-cart-btn p:nth-child(2) {
     margin-right: 80px;
 }
-/*карта*/
-
 .form-map {
     display: none;
     top: 50%;
@@ -2709,4 +2601,10 @@ textarea::-webkit-input-placeholder {
     position: relative;
     left: 0;
     top: -13px;
+}
+.main-manufact-image {
+    display: flex;
+}
+.image-center {
+    margin: auto auto;
 }
